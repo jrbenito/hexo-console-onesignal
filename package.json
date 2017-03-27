@@ -1,0 +1,25 @@
+{
+  "name": "hexo-console-onesignal",
+  "version": "0.0.0",
+  "description": "Hexo console plugin to download and install Onesignal.com scripts/XML necessary for full HTTPS support",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jrbenito/hexo-console-onesignal.git"
+  },
+  "keywords": [
+    "Hexo",
+    "Onesignal",
+    "\"Push",
+    "notification\""
+  ],
+  "author": "Josenivaldo Benito Junior <jrbenito@benito.qsl.br>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jrbenito/hexo-console-onesignal/issues"
+  },
+  "homepage": "https://github.com/jrbenito/hexo-console-onesignal#readme"
+}
