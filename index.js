@@ -19,17 +19,20 @@ var download = function(url, dest, cb) {
     })
     .pipe(file.on('finish', function() {
                     file.close(cb);  // close() is async, call cb after close completes.
-                })
-    );
+                
+    }));
 };
 
 var unzip = function(err, cb) {
+    var dest = 'onesignal.zip';
+    
     if (err) {
         log.log("Can´t unzip and install files");
     } else {
         log.log("Unzipping...");
+        fs.unlink(dest);
     }
-}
+};
 
 var options = {
     options: [
@@ -41,6 +44,8 @@ var options = {
 hexo.extend.console.register('onesignal', 'Manage Onesignal script/XML files', options, function(args){
     log.log('Downloading: ', 'https://github.com/OneSignal/OneSignal-Website-SDK/releases/download/https-integration-files/OneSignal-Web-SDK-HTTPS-Integration-Files.zip');
 
-    download(url,'onesignal.zip',unzip);
+    var dest = 'onesignal.zip';
+
+    download(url,dest,unzip);
     
 });
