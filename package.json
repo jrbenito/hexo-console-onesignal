@@ -1,6 +1,6 @@
 {
   "name": "hexo-console-onesignal",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Hexo console plugin to download and install Onesignal.com scripts/XML necessary for full HTTPS support",
   "main": "index.js",
   "scripts": {
